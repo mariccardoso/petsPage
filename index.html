@@ -145,12 +145,13 @@
     <section class="contact">
         <h1>Contato</h1>
         <div class="contact-container">
-            <form action="">
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
-                <button type="submit" onclick="Mensagem()">Enviar</button>
-            </form>
+            <div id="contatoForm">
+                <input id="nome" type="text" placeholder="Nome">
+                <input id="email" type="email" placeholder="Email">
+                <textarea id="mensagem" name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                <button type="button" 
+                onclick ="enviarEmail()">Enviar</button>
+            </div>
         </div>
     </section>
 
@@ -175,19 +176,9 @@
         </div>
     </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-        function Mensagem(){
-            alert("Mensagem enviada com sucesso!");
-        }
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="./assets/scripts/index.scripts.js"></script>
 
-
-    </script>
-    <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-  </script>
-  <script src="assets/scripts/index.scripts.js"></script>
 </body>
 </html>
